@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Goal Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Fitness Goal Tracker</h1>
+    <section id="goal-section">
+      <h2>Your Goals</h2>
+      <form id="goal-form">
+        <input type="text" id="goal-input" placeholder="Add a new goal..." required />
+        <button type="submit">Add Goal</button>
+      </form>
+      <ul id="goal-list"></ul>
+    </section>
+    <section id="calendar-section">
+      <h2>Monthly Tracker</h2>
+      <div id="calendar-controls">
+        <button id="prev-month">&#8592; Prev</button>
+        <span id="month-label"></span>
+        <button id="next-month">Next &#8594;</button>
+      </div>
+      <div id="calendar"></div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
